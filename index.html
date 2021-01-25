@@ -9,28 +9,32 @@
 <body>
     <div class="mainBlock">
         <div class="topBlock">
-            <input type="text">
-            <input type="text">
+            
+                <input id="input1" name="textview" type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                <input id="input2" type="text" readonly="readonly">
+          
         </div>
         <div class="bottomBlock">
-            <div class="button buttonClear"> <p>C</p> </div>
-            <div class="button buttonOrange"><p>×</p></div>
-            <div class="button"><p>7</p></div>
-            <div class="button"><p>8</p></div>
-            <div class="button"><p>9</p></div>
-            <div class="button buttonOrange"><p>÷</p></div>
-            <div class="button"><p>4</p></div>
-            <div class="button"><p>5</p></div>
-            <div class="button"><p>6</p></div>
-            <div class="button buttonOrange"><p>-</p></div>
-            <div class="button"><p>1</p></div>
-            <div class="button"><p>2</p></div>
-            <div class="button"><p>3</p></div>
-            <div class="button buttonOrange"><p>+</p></div>
-            <div class="button buttonNull"><p>0</p></div>
-            <div class="button"><p>.</p></div>
-            <div class="button buttonOrange"><p>=</p></div>
+            <div class="button buttonClear" onclick="ClearText()"> <p>C</p> </div>
+            <div class="button buttonOrange" onclick="GetButton('*')"><p>×</p></div>
+            <div class="button" onclick="GetButton('7')"><p>7</p></div>
+            <div class="button" onclick="GetButton('8')"><p>8</p></div>
+            <div class="button" onclick="GetButton('9')"><p>9</p></div>
+            <div class="button buttonOrange" onclick="GetButton('/')"><p>÷</p></div>
+            <div class="button" onclick="GetButton('4')"><p>4</p></div>
+            <div class="button" onclick="GetButton('5')"><p>5</p></div>
+            <div class="button" onclick="GetButton('6')"><p>6</p></div>
+            <div class="button buttonOrange" onclick="GetButton('-')"><p>-</p></div>
+            <div class="button" onclick="GetButton('1')"><p>1</p></div>
+            <div class="button" onclick="GetButton('2')"><p>2</p></div>
+            <div class="button" onclick="GetButton('3')"><p>3</p></div>
+            <div class="button buttonOrange" onclick="GetButton('+')"><p>+</p></div>
+            <div class="button buttonNull" onclick="GetButton('0')"><p>0</p></div>
+            <div class="button" onclick="GetButton('.')"><p>.</p></div>
+            <div id="result" class="button buttonOrange" onclick="GetResult(); GetButton('=')"><p>=</p></div>
         </div>
     </div>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>

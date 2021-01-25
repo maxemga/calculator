@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #1B1B1B;
+    background-color: #FBD2B3;
 }
 
 .mainBlock {
@@ -38,6 +38,9 @@ body {
     font-size: 25px;
     color: #F4F4F4;
 }
+.topBlock input:nth-child(2) {
+    height: 3em;
+}
 
 .bottomBlock {
     border: 2px solid #606060;
@@ -52,12 +55,17 @@ body {
 
 .button {
     background-color: #585858;
-    padding: 2em;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 50%;
     text-align: center;
     position: relative;
     cursor: pointer;
 }
+
+.button:hover {
+    background-color: #9B9B9B;
+}
+
 p {
     position: absolute;
     left: 50%;
@@ -65,7 +73,7 @@ p {
     transform: translate(-50%, -50%);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     cursor: pointer;
 }
 
@@ -75,14 +83,18 @@ p {
 
 .buttonClear {
     grid-column: 1 / span 3;
-  
+    border-radius: 50px; 
     background-color: #C2C2C2;
     
   }
 .buttonNull {
     grid-column: 1 / span 2;
+    border-radius: 50px;
 
 }
 .buttonOrange { 
     background-color: #F26A06;
+}
+.buttonOrange:hover {
+    background-color: #F8B278;
 }
