@@ -6,6 +6,54 @@
 body {
     background-color: #FBD2B3;
 }
+.flexOverlay {
+    display: flex;
+}
+.blockOverlayLeft {
+    position: fixed;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    opacity: 1;
+}
+.blockOverlayLeftActive {
+    transform: translateX(-100%);
+    transition: 2s;
+}
+.blockOverlayRight {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    opacity: 1;
+}
+.blockOverlayRightActive {
+    transform: translateX(100%);
+    transition: 2s;
+}
+
+
+.previewText {
+    z-index: 11;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0;
+    transition: 1s;
+}
+.previewTextActive {
+    opacity: 1;
+    transition: 3s;
+}
 
 .mainBlock {
     position: absolute;
