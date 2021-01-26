@@ -27,6 +27,7 @@ function CloseText() {
 function CloseOverlay() {
     overlayLeft.classList.add("blockOverlayLeftActive");
     overlayRight.classList.add("blockOverlayRightActive");
+    previewText.style.display = "none";
 }
 
 
